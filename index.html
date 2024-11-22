@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner Slider</title>
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="slider_with_text">
+        <ul class="slider_with_text_container">
+          <li>
+            <img
+              class="slider_image"
+              src="https://cdn.pixabay.com/photo/2019/09/10/07/06/women-4465397_960_720.jpg"
+              alt="Slide 1"
+            />
+            <div class="slider_info">
+              <div class="info">
+                <p>New basics</p>
+                <h2>Heading</h2>
+                <div>
+                  <button>Shop new in</button>
+                  <button>Shop all</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img
+              class="slider_image"
+              src="https://cdn.pixabay.com/photo/2020/02/01/03/00/girl-4809434_640.jpg"
+              alt="Slide 2"
+            />
+            <div class="slider_info">
+              <div class="info">
+                <p>New basics</p>
+                <h2>Heading</h2>
+                <div>
+                  <button>Shop new in</button>
+                  <button>Shop all</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img
+              class="slider_image"
+              src="https://cdn.pixabay.com/photo/2019/08/28/17/10/outdoor-4437215_640.jpg"
+              alt="Slide 3"
+            />
+            <div class="slider_info">
+              <div class="info">
+                <p>New basics</p>
+                <h2>Heading</h2>
+                <div>
+                  <button>Shop new in</button>
+                  <button>Shop all</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- Indicator container -->
+        <div class="indicator_container"></div>
+      </div>
+    </main>
+  </body>
+
+  <script src="./script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slideInterval = 2000; // Change this dynamically in Shopify, e.g., from a settings schema
+      initializeSlider(slideInterval);
+    });
+  </script>
+</html>
